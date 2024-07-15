@@ -86,7 +86,7 @@ class Payment(core_models.VersionedModel):
     reconciliation_date = models.DateTimeField(
         db_column="ReconciliationDate", null=True, blank=True
     )
-    json_ext = models.JSONField(null=True, blank=True)
+    json_ext = models.JSONField(null=True, blank=True, max_length=250)
 
     # rowid = models.TextField(db_column='RowID')
     # auditED, not audit ???
