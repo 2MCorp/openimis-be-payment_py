@@ -39,3 +39,18 @@ None
 None
 
 ## openIMIS Modules Dependencies
+
+## Installattion
+
+`git clone https://github.com/2MCorp/openimis-be-payment_py.git --branch kachma`
+
+`pip install -e openimis-be-payment_py`
+
+#### Goto `openimis.json` in the main project folder.
+
+```
+{
+  "name": "payment",
+  "pip": "git+https://github.com/2MCorp/openimis-be-payment_py.git@kachma#egg=openimis-be-payment"
+}
+```
